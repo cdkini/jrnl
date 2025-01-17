@@ -1,6 +1,6 @@
 import express from 'express';
-// import cors from 'cors';
-// import * as bodyParser from 'body-parser';
+import cors from 'cors';
+import * as bodyParser from 'body-parser';
 import routes from './app/routes';
 // import HttpException from './app/models/http-exception.model';
 
@@ -10,9 +10,9 @@ const app = express();
  * App Configuration
  */
 
-// app.use(cors());
-// app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(routes);
 
 // // Serves images
