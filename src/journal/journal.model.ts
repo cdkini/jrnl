@@ -1,5 +1,4 @@
 export interface Journal {
-    title: string;
-    contents: string;
+  title: string;
+  contents: string;
 }
-  

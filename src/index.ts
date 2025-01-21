@@ -1,7 +1,7 @@
-import { API } from './api';
+import { API } from "./api";
 
 function main() {
-  const api = new API({port: 3000});
+  const api = new API({ port: 3000 });
   api.listenAndServe();
 }
 

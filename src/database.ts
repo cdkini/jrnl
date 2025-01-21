@@ -1,6 +1,5 @@
-import { JournalTable } from './journal/journal.table'
-
+import { JournalTable } from "./journal/journal.table";
 
 export interface Database {
-  journal: JournalTable
+  journal: JournalTable;
 }
